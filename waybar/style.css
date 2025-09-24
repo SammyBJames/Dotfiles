@@ -1,0 +1,65 @@
+@define-color foreground #cdd6f4;
+@define-color background #1a1b26;
+
+* {
+  background-color: rgba(0, 0, 0, 0);
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding: 8px;
+  background-color: @background;
+  border-radius: 16px;
+}
+
+.modules-right {
+  margin-top: 8px;
+  padding: 8px;
+  margin-right: 8px;
+  background-color: @background;
+  border-radius: 16px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0px 4px;
+  margin: 0 4px;
+  min-width: 9px;
+  border-radius: 50%;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#clock {
+  margin-left: 4px;
+  margin-right: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
